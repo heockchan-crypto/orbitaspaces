@@ -4,6 +4,7 @@ import Impact from '../components/Impact'
 import WhatWeDo from '../pages/WhatWeDo'
 import Contact from '../pages/Contact'
 import Footer from '../components/Footer'
+import SEO from '../components/SEO'
 
 const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -17,6 +18,12 @@ const sectionVariants = {
 export default function Landing() {
     return (
         <div className="snap-container relative">
+            <SEO
+                title="Orbita | 당신만의 빛나는 궤도를 함께 그립니다"
+                description="오르비타(Orbita) - 크리에이터가 자신만의 궤도를 찾아 빛날 수 있도록 돕는 크리에이터 양성 전문 기업. 인큐베이팅, 멘토링, 파이낸싱을 통해 크리에이터의 성장을 지원합니다."
+                path="/"
+                keywords="오르비타, Orbita, 크리에이터 양성, 인큐베이팅, MCN, 콘텐츠 크리에이터, 소셜벤처"
+            />
             {/* Cosmic Horizon Background via CSS */}
             <div className="fixed inset-0 z-0 bg-space-base pointer-events-none">
                 {/* Deep Space Base */}

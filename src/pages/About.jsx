@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Building2, User, BookOpen, TrendingUp, Users } from 'lucide-react';
 import SectionHorizon from '../components/SectionHorizon';
 import RevenueInfographic from '../components/RevenueInfographic';
+import SEO from '../components/SEO';
 
 const fadeUp = {
     initial: { opacity: 0, y: 40 },
@@ -151,6 +152,12 @@ const sections = [
 export default function About() {
     return (
         <div className="min-h-screen bg-space-base pt-28 pb-20">
+            <SEO
+                title="오르비타 소개 | Orbita About"
+                description="오르비타의 비전, 조직 구조, 교육 이념, 수익 모델을 소개합니다. 크리에이터 인큐베이팅 전문 소셜벤처."
+                path="/about"
+                keywords="오르비타 소개, Orbita about, 크리에이터 인큐베이팅, 소셜벤처, 교육 이념"
+            />
             {/* Page Header */}
             <motion.div
                 className="max-w-7xl mx-auto px-6 mb-20"

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Layers, Lightbulb, Handshake, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SectionHorizon from '../components/SectionHorizon';
+import SEO from '../components/SEO';
 
 const fadeUp = {
     initial: { opacity: 0, y: 40 },
@@ -101,6 +102,12 @@ export default function WhatWeDo({ isSection = false }) {
     // Full page view
     return (
         <div className="min-h-screen bg-space-base pt-28 pb-20">
+            <SEO
+                title="오르비타의 활동 | What We Do - Orbita"
+                description="크리에이터 인큐베이팅, 멘토링 시스템, 파이낸싱 & 지원, 커뮤니티 & 연구. 오르비타의 크리에이터 성장 지원 프로그램을 만나보세요."
+                path="/what-we-do"
+                keywords="크리에이터 인큐베이팅, 멘토링, 크리에이터 지원, 파이낸싱, 콘텐츠 교육"
+            />
             {/* Page Header */}
             <motion.div className="max-w-7xl mx-auto px-6 mb-20" {...fadeUp}>
                 <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 font-merriweather italic">

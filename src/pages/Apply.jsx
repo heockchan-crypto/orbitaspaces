@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2, HelpCircle, Rocket, Target, Users } from 'lucide-react';
 import ParticleNetwork from '../components/ParticleNetwork';
+import SEO from '../components/SEO';
 
 const tracks = [
     {
@@ -44,6 +45,12 @@ const faqs = [
 export default function Apply() {
     return (
         <div className="min-h-screen bg-space-base text-white selection:bg-accent-cyan selection:text-space-base font-sans relative overflow-x-hidden">
+            <SEO
+                title="지원하기 | Apply to Orbita"
+                description="오르비타 크리에이터 프로그램에 지원하세요. Voyager Track과 Accelerator Track을 통해 크리에이터로 성장할 수 있습니다."
+                path="/apply"
+                keywords="오르비타 지원, 크리에이터 지원, Orbita apply, 크리에이터 프로그램, Voyager, Accelerator"
+            />
             {/* Background */}
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <ParticleNetwork />
